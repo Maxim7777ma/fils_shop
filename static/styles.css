@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+html { font-family: sans-serif}
+    
+body{
+    background: rgb(214, 33, 33);
+}
+.film{
+    padding: 4rem;
+    border-color:  black;
+}
+.film-btn-wrapper{
+    margin-left: 7rem;
+    margin-top: 1rem;
+    border: 5rem black;
+}
+
+a {
+    text-decoration: none;
+    color: hotpink;
+    padding: 1rem;
+    font-size: 2rem;
+    
+   
+    }
+    
+li {
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+    }

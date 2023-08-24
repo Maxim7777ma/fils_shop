@@ -1,0 +1,49 @@
+{% extends '_base.html' %}
+{% load static %}
+
+
+{% block title %}<title>Application</title>{% endblock title %}
+
+{%block header%} 
+    <header>
+        <nav> 
+            <ul>
+                <a href="#">Categories </a>
+            </ul>
+        </nav>
+    </header>
+{%endblock header%}
+
+
+{% block style %}<link rel="stylesheet" href="{% static "app/styles.css" %}"/> {% endblock %}
+
+
+
+
+
+
+{% block main %}
+
+        {% for film in films %}
+            <div class="film">
+                <h1 class="film-title">{{film.label}}</h1>
+                <img class="film-img" src={{film.image}} />
+
+                <p>
+                    {{film.description}}
+                </p>    
+
+                <div class="film-btn-wrapper">
+                    <a href="{% url 'film_detail' slug=film.slug %}" class="film-btn">Watch</a>
+                </div>
+            </div>
+        {% endfor %}
+
+{% endblock main %}
+
+{% block footer %}{% endblock footer %}
+
+
+#max7
+#maxim7@gmail.com
+#password7
